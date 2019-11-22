@@ -44,7 +44,7 @@ class FlightsController < ApplicationController
     @flight = Flight.find(params.fetch("id_to_modify"))
 
     @flight.flight_time = params.fetch("flight_time")
-    @flight.user_id = params.fetch("user_id")
+    
     @flight.departs_at = params.fetch("departs_at")
     @flight.description = params.fetch("description")
 
